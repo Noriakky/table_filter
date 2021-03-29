@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.sortTable{}
+.sortTable thead th {
+    position: relative;
+}
+.filterWrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.switch {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.switch:after {
+    display: inline-block;
+    cursor: pointer;
+    content: url('../img/common/angle.png');
+    position: relative;
+    top: 2px;
+    margin-left: .5rem;
+}
+.switch.active:after {
+    content: url('../img/common/close.png');
+}
+
+.mcFilter {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border: 1px solid #329bca;
+    width: 100%;
+    display: none;
+}
+
+.mcFilter.vis {
+    display: block;
+}
+
+.mcFilter_Item {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-align: left;
+    padding: 5px 5px 5px 30px;
+    position: relative;
+}
+.mcFilter_Item:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: #fff;
+    top: 8px;
+    left: 5px;
+    display: inline-block;
+    border: 1px solid #999;
+}
+.mcFilter_Item.active:after {
+    content: "✔";
+    position: absolute;
+    top: 4px;
+    left: 7px;
+
+}
+.mcFilter_Item:hover {
+background-color: #7bb5d0;
+}
+.sortTable thead th { vertical-align: middle;}
+.sortTable tbody tr.unvis { display: none; }
+.sortTable tbody tr.vis { display: table-row; }

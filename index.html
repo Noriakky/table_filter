@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=IE7">
+<title>table_filter</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/table_filter.css">
+</script>
+</head>
+
+<body>
+
+<div id="ttl">
+	<div class="inner">
+		<h1>table_filter</h1>
+	</div>
+</div>
+
+<main>
+  <div class="inner">
+		<div class="lead">
+			<p>
+				使い方ですが「配布年月」のセルに data-date="○○○○年"と追加、<br>
+				「カテゴリ」には data-category="任意のテキスト"を入力してください。<br>
+				重複しても大丈夫です。
+				
+
+			</p>
+		</div>
+	  <h2>テスト</h2>
+    <p>※以下一覧の「配布年月」「カテゴリー」についてはソート機能で検索が可能です。</p>
+	  <table class="sortTable">
+		  <caption>（敬称略）</caption>
+		  <thead>
+			  <tr>
+				  <th class="wid12">
+					  <div class="filterWrap">
+						  <div class="switch">配布年月</div>
+						  <div class="mcFilter d_filter">
+							<div class="mcFilter_Item year_all active">すべて選択</div>
+						</div>
+					</div>
+				  </th>
+				  <th>テーマ</th>
+				  <th class="wid14">Ｎｏ.</th>
+				  <th class="wid22">
+					  <div class="filterWrap">
+						  <div class="switch">カテゴリー</div>
+						  <div class="mcFilter c_filter">
+							  <div class="mcFilter_Item category_all active">すべて選択</div>
+
+						  </div>
+					  </div>
+				  </th>
+				  
+			  </tr>
+		  </thead>
+		  <tbody>
+			  <tr>
+				  <th class="date" data-date="2020年">2020年3月</th>
+				  <td>＜オリンピック・パラリンピックと人権＞</td>
+				  <td class="txt_c">Ｎｏ.１１２</td>
+				  <td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				  <th class="date" data-date="2020年">2020年2月</th>
+				  <td>＜オリンピック・パラリンピックと人権＞</td>
+				  <td class="txt_c">Ｎｏ.１１１</td>
+				  <td class="txt_c cat"  data-category="人権全般">人権全般</td>
+			  </tr>
+			  <tr>
+				  <th class="date" data-date="2020年">2020年1月</th>
+				  <td>＜心のバリアフリー＞</td>
+				  <td class="txt_c">Ｎｏ.１１０</td>
+				  <td class="txt_c cat"  data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+			  </tr>
+			  <tr>
+				  <th class="date" data-date="2019年">2019年12月</th>
+				  <td>＜人権週間＞</td>
+				  <td class="txt_c">Ｎｏ.１０９</td>
+				  <td class="txt_c cat"  data-category="人権全般">人権全般</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年11月</th>
+				<td>＜LGBTなどの性的マイノリティについて＞</td>
+				<td class="txt_c">Ｎｏ.１０８</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年10月</th>
+				<td>＜だれもが安全で豊かな生活を送るために～障がい者に関する人権～＞</td>
+				<td class="txt_c">Ｎｏ.１０７</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年9月</th>
+				<td>＜言葉・イラストの表現 ～人権尊重の観点から、よりよい表現について考えてみましょう～＞</td>
+				<td class="txt_c">Ｎｏ.１０６</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年7月</th>
+				<td>＜同和問題＞</td>
+				<td class="txt_c">Ｎｏ.１０５</td>
+				<td class="txt_c cat" data-category="同和問題">同和問題</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年6月</th>
+				<td>＜企業は、なぜ人権問題に取り組むのでしょうか？＞</td>
+				<td class="txt_c">Ｎｏ.１０４</td>
+				<td class="txt_c cat" data-category="企業と人権">企業と人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年5月</th>
+				<td>＜ヘイトスピーチ＞</td>
+				<td class="txt_c">Ｎｏ.１０３</td>
+				<td class="txt_c cat" data-category="外国人の人権">外国人の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年4月</th>
+				<td>＜障がい者にとっての社会的障壁を考える＞</td>
+				<td class="txt_c">Ｎｏ.１０２</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年3月</th>
+				<td>＜だれもが働きやすい職場づくり～障がい者にとっての社会的障壁を考える～＞</td>
+				<td class="txt_c">Ｎｏ.１０１</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年2月</th>
+				<td>＜インターネットと人権＞</td>
+				<td class="txt_c">Ｎｏ.１００</td>
+				<td class="txt_c cat" data-category="インターネットと人権">インターネットと人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2019年">2019年1月</th>
+				<td>＜インターネットと人権＞</td>
+				<td class="txt_c">Ｎｏ.９９</td>
+				<td class="txt_c cat" data-category="インターネットと人権">インターネットと人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年12月</th>
+				<td>＜世界人権宣言＞</td>
+				<td class="txt_c">Ｎｏ.９８</td>
+				<td class="txt_c cat" data-category="人権全般">人権全般</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年11月</th>
+				<td>＜職場のコミュニケーションについて＞</td>
+				<td class="txt_c">Ｎｏ.９７</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年10月</th>
+				<td>＜パワーハラスメントについて＞</td>
+				<td class="txt_c">Ｎｏ.９６</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年9月</th>
+				<td>＜ステレオタイプについて＞</td>
+				<td class="txt_c">Ｎｏ.９５</td>
+				<td class="txt_c cat" data-category="人権全般">人権全般</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年7月</th>
+				<td>＜同和問題について＞</td>
+				<td class="txt_c">Ｎｏ.９４</td>
+				<td class="txt_c cat" data-category="同和問題">同和問題</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年6月</th>
+				<td>＜人権の尊重＞</td>
+				<td class="txt_c">Ｎｏ.９３</td>
+				<td class="txt_c cat" data-category="人権全般">人権全般</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年5月</th>
+				<td>＜職場の人権について ～ハラスメントの防止～＞</td>
+				<td class="txt_c">Ｎｏ.９２</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年4月</th>
+				<td>＜職場の人権について　～ハラスメントの防止～＞</td>
+				<td class="txt_c">Ｎｏ.９１</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年3月</th>
+				<td>＜LGBTなどの性的マイノリティについて＞</td>
+				<td class="txt_c">Ｎｏ.９０</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年2月</th>
+				<td>＜言葉・イラストの表現について＞</td>
+				<td class="txt_c">Ｎｏ.８９</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2018年">2018年1月</th>
+				<td>＜障がい者に関するマークについて＞</td>
+				<td class="txt_c">Ｎｏ.８８</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年12月</th>
+				<td>＜人権について考えてみましょう＞</td>
+				<td class="txt_c">Ｎｏ.８７</td>
+				<td class="txt_c cat" data-category="人権全般">人権全般</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年11月</th>
+				<td>＜障害者差別解消法について＞</td>
+				<td class="txt_c">Ｎｏ.８６</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年10月</th>
+				<td>＜ヘイトスピーチ解消法について＞</td>
+				<td class="txt_c">Ｎｏ.８５</td>
+				<td class="txt_c cat" data-category="外国人の人権">外国人の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年9月</th>
+				<td>＜部落差別解消推進法について＞</td>
+				<td class="txt_c">Ｎｏ.８４</td>
+				<td class="txt_c cat" data-category="同和問題">同和問題</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年7月</th>
+				<td>＜不適切な言葉、表現について＞</td>
+				<td class="txt_c">Ｎｏ.８２～８３</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年6月</th>
+				<td>＜不適切な言葉、表現について＞</td>
+				<td class="txt_c">Ｎｏ.７８～８１</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年5月</th>
+				<td>＜カラーユニバーサルデザイン（カラーバリアフリー）＞</td>
+				<td class="txt_c">Ｎｏ.７５～７７</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年4月</th>
+				<td>＜カラーユニバーサルデザイン（カラーバリアフリー）＞</td>
+				<td class="txt_c">Ｎｏ.７２～７４</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年3月</th>
+				<td>＜カラーユニバーサルデザイン（カラーバリアフリー）＞</td>
+				<td class="txt_c">Ｎｏ.７１</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年3月</th>
+				<td>＜カラーユニバーサルデザイン（カラーバリアフリー）＞</td>
+				<td class="txt_c">Ｎｏ.７０</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  <tr>
+				<th class="date" data-date="2017年">2017年3月</th>
+				<td>＜カラーユニバーサルデザイン（カラーバリアフリー）＞</td>
+				<td class="txt_c">Ｎｏ.６９</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年3月</th>
+				<td>＜カラーユニバーサルデザイン／カラーバリアフリー＞</td>
+				<td class="txt_c">Ｎｏ.６８</td>
+				<td class="txt_c cat" data-category="言葉と表現">言葉と表現</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年2月</th>
+				<td>＜土地差別調査事件について＞</td>
+				<td class="txt_c">Ｎｏ.６７</td>
+				<td class="txt_c cat" data-category="同和問題">同和問題</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年2月</th>
+				<td>＜土地差別調査事件について＞</td>
+				<td class="txt_c">Ｎｏ.６６</td>
+				<td class="txt_c cat" data-category="同和問題">同和問題</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年2月</th>
+				<td>＜土地差別調査事件について＞</td>
+				<td class="txt_c">Ｎｏ.６５</td>
+				<td class="txt_c cat" data-category="同和問題">同和問題</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年1月</th>
+				<td>＜社長達第７３号（平成11年7月1日）の改正＞</td>
+				<td class="txt_c">Ｎｏ.６４</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年1月</th>
+				<td>＜マタニティハラスメントとは＞</td>
+				<td class="txt_c">Ｎｏ.６３</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2017年">2017年1月</th>
+				<td>＜「男女雇用機会均等法」「育児・介護休業法」改正（2017.1.1施工）＞</td>
+				<td class="txt_c">Ｎｏ.６２</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年12月</th>
+				<td>＜ＬＧＢＴ等 性的マイノリティについて＞</td>
+				<td class="txt_c">Ｎｏ.６１</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年12月</th>
+				<td>＜ＬＧＢＴ等 性的マイノリティについて＞</td>
+				<td class="txt_c">Ｎｏ.６０</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年11月</th>
+				<td>＜ＬＧＢＴ等 性的マイノリティとは？＞</td>
+				<td class="txt_c">Ｎｏ.５９</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年11月</th>
+				<td>＜ＬＧＢＴ等 性的マイノリティとは？＞</td>
+				<td class="txt_c">Ｎｏ.５８</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年11月</th>
+				<td>＜ＬＧＢＴ等 性的マイノリティとは？＞</td>
+				<td class="txt_c">Ｎｏ.５７</td>
+				<td class="txt_c cat" data-category="性の多様性">性の多様性</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年10月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞〔合理的配慮の具体例〕（例３）（例４）</td>
+				<td class="txt_c">Ｎｏ.５６</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年10月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞〔合理的配慮の具体例〕（例２）</td>
+				<td class="txt_c">Ｎｏ.５５</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年10月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞〔合理的配慮の具体例〕（例１）</td>
+				<td class="txt_c">Ｎｏ.５４</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年10月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞◆合理的配慮</td>
+				<td class="txt_c">Ｎｏ.５３</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年9月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞◆不当な差別的取扱い　具体例（例５）（例６）</td>
+				<td class="txt_c">Ｎｏ.５２</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年9月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞◆不当な差別的取扱い　具体例（例３）（例４）</td>
+				<td class="txt_c">Ｎｏ.５１</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年9月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞◆不当な差別的取扱い　具体例（例１）（例２）</td>
+				<td class="txt_c">Ｎｏ.５０</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年7月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞「対応要領」「対応指針」とは？</td>
+				<td class="txt_c">Ｎｏ.４９</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年7月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞</td>
+				<td class="txt_c">Ｎｏ.４８</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年7月</th>
+				<td>２０１６年４月１日から障害者差別解消法がスタートしました。<br />＜障害者差別解消法＞</td>
+				<td class="txt_c">Ｎｏ.４７</td>
+				<td class="txt_c cat" data-category="障がい者の人権">障がい者の人権</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年6月</th>
+				<td>～人権腕だめし（ハラスメント編）～</td>
+				<td class="txt_c">Ｎｏ.４６</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年6月</th>
+				<td>～人権腕だめし（ハラスメント編）～</td>
+				<td class="txt_c">Ｎｏ.４５</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年5月</th>
+				<td>＜コミュニケーション（よりよい職場を作るために＞<br />疑問に思ったら相談しよう</td>
+				<td class="txt_c">Ｎｏ.４４</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年5月</th>
+				<td>＜コミュニケーション（よりよい職場を作るために＞<br />自分らしさを取り戻す</td>
+				<td class="txt_c">Ｎｏ.４３</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年5月</th>
+				<td>＜コミュニケーション（よりよい職場を作るために＞<br />自分も大切、相手も大切</td>
+				<td class="txt_c">Ｎｏ.４２</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年4月</th>
+				<td>＜コミュニケーション（よりよい職場を作るために＞<br />職場では、権利と義務が生じる</td>
+				<td class="txt_c">Ｎｏ.４１</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年4月</th>
+				<td>＜コミュニケーション（よりよい職場を作るために＞<br />大切にされる権利、する権利を知ろう</td>
+				<td class="txt_c">Ｎｏ.４０</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年4月</th>
+				<td>＜コミュニケーション（よりよい職場を作るために＞<br />やっぱり、「おはよう」「ありがとう」「ごめんなさい」</td>
+				<td class="txt_c">Ｎｏ.３９</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年4月</th>
+				<td>＜コミュニケーション（自分と仕事の関係づくり）＞<br />職場の「あたり前」を見直そう</td>
+				<td class="txt_c">Ｎｏ.３８</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年3月</th>
+				<td>＜コミュニケーション（自分と仕事の関係づくり）＞<br />ちょうどいい距離を考える</td>
+				<td class="txt_c">Ｎｏ.３７</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年3月</th>
+				<td>＜コミュニケーション（自分と仕事の関係づくり）＞<br />ワンランク上のものの見方を心がけよう</td>
+				<td class="txt_c">Ｎｏ.３６</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年3月</th>
+				<td>＜コミュニケーション（自分と仕事の関係づくり）＞<br />仕事の仕方を考える</td>
+				<td class="txt_c">Ｎｏ.３５</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年3月</th>
+				<td>＜コミュニケーション（自分と仕事の関係づくり）＞<br />「主役は自分。仕事を楽しむ」を心がけよう</td>
+				<td class="txt_c">Ｎｏ.３４</td>
+				<td class="txt_c cat" data-category="職場のコミュニケーション">職場のコミュニケーション</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年2月</th>
+				<td>＜パワハラ＞<br />聞くこと、伝えることが大切</td>
+				<td class="txt_c">Ｎｏ.３３</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年2月</th>
+				<td>＜パワハラ＞<br />自分を信じて、ハキハキとした態度で</td>
+				<td class="txt_c">Ｎｏ.３２</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年2月</th>
+				<td>＜パワハラ＞<br />日ごろのふるまいを見直す</td>
+				<td class="txt_c">Ｎｏ.３１</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年2月</th>
+				<td>＜パワハラ＞<br />自分のこだわりを見直す</td>
+				<td class="txt_c">Ｎｏ.３０</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年1月</th>
+				<td>＜パワハラ＞<br />自分自身をコントロールする</td>
+				<td class="txt_c">Ｎｏ.２９</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年1月</th>
+				<td>＜パワハラ＞<br />上手な叱り方を心がけよう</td>
+				<td class="txt_c">Ｎｏ.２８</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2016年">2016年1月</th>
+				<td>＜パワハラ＞<br />相手が嫌がることはやめよう</td>
+				<td class="txt_c">Ｎｏ.２７</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年12月</th>
+				<td>＜パワハラ＞<br />適切な業務指示かどうかが判断基準</td>
+				<td class="txt_c">Ｎｏ.２６</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年12月</th>
+				<td>＜パワハラ＞<br />パワハラはやる気を失わせます</td>
+				<td class="txt_c">Ｎｏ.２５</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年12月</th>
+				<td>＜パワハラ＞<br />ひどいパワハラは法律違反です</td>
+				<td class="txt_c">Ｎｏ.２４</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年11月</th>
+				<td>＜パワハラ＞<br />パワハラは職場全体に悪い影響を及ぼす！</td>
+				<td class="txt_c">Ｎｏ.２３</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年11月</th>
+				<td>＜パワハラ＞<br />パワハラを知ることがなくすことの第一歩</td>
+				<td class="txt_c">Ｎｏ.２２</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年11月</th>
+				<td>＜セクハラ＞<br />違いを認め一人ひとりを尊重する職場づくりがセクハラを防ぐ</td>
+				<td class="txt_c">Ｎｏ.２１</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年11月</th>
+				<td>＜セクハラ＞<br />プライバシーを守り、相手の立場にたって相談を受けよう</td>
+				<td class="txt_c">Ｎｏ.２０</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年10月</th>
+				<td>＜セクハラ＞<br />見てみぬふりは同罪！　　セクハラは職場全体で防止しよう</td>
+				<td class="txt_c">Ｎｏ.１９</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年10月</th>
+				<td>＜セクハラ＞<br />しつこいセクハラは、ひとりで悩まず相談窓口へ</td>
+				<td class="txt_c">Ｎｏ.１８</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年10月</th>
+				<td>＜セクハラ＞<br />思い込みにとらわれず、嫌なものは嫌と正直に伝えよう</td>
+				<td class="txt_c">Ｎｏ.１７</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年10月</th>
+				<td>＜セクハラ＞<br />お客様や取引先のセクハラから社員を守るのも会社の義務</td>
+				<td class="txt_c">Ｎｏ.１６</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年9月</th>
+				<td>＜セクハラ＞<br />自分を守ることが、一番のセクハラ予防につながる！！②</td>
+				<td class="txt_c">Ｎｏ.１５</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年9月</th>
+				<td>＜セクハラ＞<br />自分を守ることが、一番のセクハラ予防につながる！！①</td>
+				<td class="txt_c">Ｎｏ.１４</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年9月</th>
+				<td>＜セクハラ＞<br />対等なパートナーとして向き合おう！！</td>
+				<td class="txt_c">Ｎｏ.１３</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年9月</th>
+				<td>＜セクハラ＞<br />相手を不快にさせるような言動は慎もう！！</td>
+				<td class="txt_c">Ｎｏ.１２</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年7月</th>
+				<td>＜セクハラ＞<br />自分の影響力に気づいてみよう！</td>
+				<td class="txt_c">Ｎｏ.１１</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年7月</th>
+				<td>＜セクハラ＞<br />「相手の気持ちを尊重する」ことからセクハラのない職場環境がうまれる</td>
+				<td class="txt_c">Ｎｏ.１０</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年7月</th>
+				<td>許さない！見過ごさない！<br />＜イエローカード＞のセクハラ</td>
+				<td class="txt_c">Ｎｏ.９</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+				
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年7月</th>
+				<td>絶対許さない！<br />＜レッドカード＞のセクハラ</td>
+				<td class="txt_c">Ｎｏ.８</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年6月</th>
+				<td>＜セクハラ＞<br />セクハラの境界線って！？</td>
+				<td class="txt_c">Ｎｏ.７</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年6月</th>
+				<td>＜セクハラ＞<br />セクハラが及ぼす影響ははかりしれない<br />セクハラが起こると・・・</td>
+				<td class="txt_c">Ｎｏ.６</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年6月</th>
+				<td>＜セクハラ＞<br />地位を利用する「対価型」、周りも迷惑「環境型」</td>
+				<td class="txt_c">Ｎｏ.５</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年6月</th>
+				<td>＜セクハラ＞<br />&lsquo;職場&rsquo;の人間関係が継続される場所とは・・・</td>
+				<td class="txt_c">Ｎｏ.４</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年4・5月</th>
+				<td>＜セクハラ＞<br />男性へのセクハラ、していませんか？</td>
+				<td class="txt_c">Ｎｏ.３</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年4・5月</th>
+				<td>＜セクハラ＞<br />セクハラはなぜ問題なのでしょうか？</td>
+				<td class="txt_c">Ｎｏ.２</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+			  <tr>
+				<th class="date" data-date="2015年">2015年4・5月</th>
+				<td>＜セクハラ＞<br />セクハラとは・・・<br />セクハラとは相手が嫌がる性的言動です</td>
+				<td class="txt_c">Ｎｏ.１</td>
+				<td class="txt_c cat" data-category="ハラスメント">ハラスメント</td>
+			  </tr>
+		  </tbody>
+	  </table>
+	</div>
+</main>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/table_filter.js"></script>
+</body>
+</html>
